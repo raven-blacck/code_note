@@ -1,0 +1,13 @@
+2020.04.21
+
+需要调用的包
+numpy
+
+
+函数：
+1.proj(f,grid,dirc,the)
+	输出：f 需要投影的3-D场 array[grid,grid,grid]
+		  grid 格子数边长
+		  dirc 投影方向 	0，1，2
+		  the 投影夹角
+

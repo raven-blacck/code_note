@@ -1,0 +1,24 @@
+2020.5.4
+
+需要调用的包：
+camb
+numpy
+
+功能：
+生成一个ang*ang的cmb+noise的正方形天图
+输出类型为np.array[grid,grid]，输出结果单位为T_cmb
+
+设置了默认的宇宙学参数和cmb温度，调用时按需更改
+
+函数：
+1.cmb2d(ang,grid,T_cmb=2.728*10**6,Delta_T=2,sigma=7)
+主要调用的函数
+Delta_T muK-arcmin; sigma: arcmin 和noise有关的量，详见0111606
+
+2.cmb_powerspectrum(T_cmb=2.728*10**6, H0=67.5, ombh2=0.022, omch2=0.122, mnu=0.06, omk=0, tau=0.06,As=2e-9, ns=0.965, r=0)
+如果当前文件夹下不存在camb生成的cmb功率谱则需要先调用此函数
+
+3.cl2map2d(cl,ang,grid)
+将功率谱转变为2d的map，由函数1调用
+
+

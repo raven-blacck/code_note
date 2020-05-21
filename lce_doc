@@ -1,0 +1,23 @@
+2020.04.20 未调试
+
+需要调用的包：
+numpy
+astropy
+fftanalysis (local)
+
+函数：
+1. postoden(x,grid)
+	输入：x array of [:,3] 粒子位置；grid 网格边长数
+	输出：由粒子位置得到的该box内的密度场
+
+2. linear_continuous_eq_den(denhalo,grid,z,Omega_m,boxlen)
+	输入：denhalo 密度场；grid 网格边长数；z 红移；Omega_m ; boxlen 盒子的边长
+	输出：den, vel, delta*v, (1+delta)*v
+
+3. linear_continuous_eq_pos(x,grid,z,Omega_m,boxlen)
+	输入：x 粒子位置；grid 网格边长数；z 红移；Omega_m ; boxlen 盒子的边长
+	输出：den, vel, delta*v, (1+delta)*v
+
+
+
+
